@@ -43,6 +43,7 @@ dvc-s3==3.0.1
 dvc-studio-client==0.18.0
 dvc-task==0.3.0
 entrypoints==0.4
+ensure==1.0.4
 filelock==3.13.1
 flatten-dict==0.4.2
 flufl.lock==7.1.1

@@ -1,0 +1,50 @@
+# dvc
+
+dvc destroy
+
+dvc init
+
+dvc remote add -d my_storage s3://S3_BUCKET_NAME
+
+dvc remote modify my_storage endpointurl https://storage.yandexcloud.net
+
+dvc remote modify --local my_storage credentialpath '.env'
+
+dvc remote modify my_storage version_aware true
+
+dvc remote list
+
+dvc pull
+
+dvc repro dvc.yaml
+
+dvc push
+
+dvc checkout  
+
+dvc commit
+
+
+# git
+
+git log --pretty=oneline 
+
+git tag -a base_model -m '<commit message>' <target commit id>
+
+git push --tags 
+
+# выводим список тегов
+git tag
+# выбираем тег, например base_model, и изучаем более подробную информацию
+git show base_model
+# переводим репозиторий на версию этого тега
+git checkout base_model
+dvc checkout 
+
+git checkout <commit id>    
+
+git switch -c <branch name>
+
+git add *
+git commit -m '<commit message>' 
+git merge <branch name>
